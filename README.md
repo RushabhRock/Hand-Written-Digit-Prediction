@@ -1,1 +1,7 @@
 # Hand-Written-Digit-Prediction
+
+This Jupyter Notebook code demonstrates the process of loading and analyzing the digits dataset from the sklearn library. The dataset, which consists of images of handwritten digits, is first loaded and visualized using Matplotlib. A few sample images and their labels are displayed to give an idea of the dataset. Next, the shapes and sizes of the images and dataset are examined. The images, originally in 2D arrays of size 8x8, are reshaped into 1D arrays with 64 features to prepare them for model training.
+
+The pixel values of the images are normalized from the range [0, 16] to [0, 1] to improve the performance of the machine learning model. After normalization, the data is split into training and testing sets using a 70-30 split. A Random Forest classifier from sklearn is then trained on the training data. Once trained, the model is used to predict the labels of the test data.
+
+To evaluate the model's performance, various metrics are calculated. The confusion matrix provides a detailed breakdown of correct and incorrect classifications, while the accuracy score summarizes the overall correctness of the predictions. Finally, a classification report offers precision, recall, and F1-score for each digit class. This comprehensive process—from data loading and visualization to preprocessing, model training, and evaluation—provides a clear example of machine learning workflow on a classic dataset.
